@@ -12,153 +12,252 @@
 				"icon": "icon-palette",
 				"label": "Onatrix Styles"
 		  },
-		  "items": [
+			"items": [
 				{
-				  "label": "Paragraphs",
-				  "items": [
+					"label": "Headings",
+					"items": [
 						{
-						  "label": "XL - 70",
-						  "items": [
-								{
-								  "label": "Light",
-								  "data": {
-										"tag": "p",
-										"class": "text-rte-xl font-light"
-								  },
-								  "appearance": {}
-								},
-								{
-								  "label": "Normal",
-								  "data": {
-										"tag": "p",
-										"class": "text-rte-xl font-regular"
-								  },
-								  "appearance": {}
-								},
-								{
-								  "label": "Bold",
-								  "data": {
-										"tag": "p",
-										"class": "text-rte-xl font-bold"
-								  },
-								  "appearance": {}
-								}
-						  ]
-						},
-						{
-						  "label": "L - 40",
-						  "items": [
-								{
-								  "label": "Light",
-								  "data": {
-										"tag": "p",
-										"class": "text-rte-lg font-light"
-								  }
-								},
-								{
-								  "label": "Normal",
-								  "data": {
-										"tag": "p",
-										"class": "text-rte-lg font-regular"
-								  }
-								},
-								{
-								  "label": "Bold",
-								  "data": {
-										"tag": "p",
-										"class": "text-rte-lg font-bold"
-								  }
-								}
-						  ]
-						},
-						{
-						  "label": "M - 20",
-						  "items": [
-								{
-								  "label": "Light",
-								  "data": {
-										"tag": "p",
-										"class": "text-rte-md font-light"
-								  }
-								},
-								{
-								  "label": "Normal",
-								  "data": {
-										"tag": "p",
-										"class": "text-rte-md font-regular"
-								  }
-								},
-								{
-								  "label": "Bold",
-								  "data": {
-										"tag": "p",
-										"class": "text-rte-md font-bold"
-								  }
-								}
-						  ]
-						},
-						{
-						  "label": "S - 16",
+							"label": "H1",
 							"items": [
 								{
-								  "label": "Light",
+									"label": "Light",
+									"data": {
+										"tag": "p",
+										"class": "text-rte-h1 font-light"
+									},
+									"appearance": {}
+								},
+								{
+									"label": "Normal",
+									"data": {
+										"tag": "p",
+										"class": "text-rte-h1 font-regular"
+									},
+									"appearance": {}
+								},
+								{
+									"label": "Bold",
+									"data": {
+										"tag": "p",
+										"class": "text-rte-h1 font-bold"
+									},
+									"appearance": {}
+								}
+							]
+						},
+						{
+							"label": "H2",
+							"items": [
+								{
+									"label": "Light",
+									"data": {
+										"tag": "p",
+										"class": "text-rte-h2 font-light"
+									}
+								},
+								{
+									"label": "Normal",
+									"data": {
+										"tag": "p",
+										"class": "text-rte-h2 font-regular"
+									}
+								},
+								{
+									"label": "Bold",
+									"data": {
+										"tag": "p",
+										"class": "text-rte-h2 font-bold"
+									}
+								}
+							]
+						},
+						{
+							"label": "H3",
+							"items": [
+								{
+									"label": "Light",
+									"data": {
+										"tag": "p",
+										"class": "text-rte-h3 font-light"
+									}
+								},
+								{
+									"label": "Normal",
+									"data": {
+										"tag": "p",
+										"class": "text-rte-h3 font-regular"
+									}
+								},
+								{
+									"label": "Bold",
+									"data": {
+										"tag": "p",
+										"class": "text-rte-h3 font-bold"
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"label": "Paragraphs",
+					"items": [
+						{
+							"label": "XL - 70",
+							"items": [
+								{
+									"label": "Light",
+									"data": {
+										"tag": "p",
+										"class": "text-rte-xl font-light"
+									},
+									"appearance": {}
+								},
+								{
+									"label": "Normal",
+									"data": {
+										"tag": "p",
+										"class": "text-rte-xl font-regular"
+									},
+									"appearance": {}
+								},
+								{
+									"label": "Bold",
+									"data": {
+										"tag": "p",
+										"class": "text-rte-xl font-bold"
+									},
+									"appearance": {}
+								}
+							]
+						},
+						{
+							"label": "L - 40",
+							"items": [
+								{
+									"label": "Light",
+									"data": {
+										"tag": "p",
+										"class": "text-rte-lg font-light"
+									}
+								},
+								{
+									"label": "Normal",
+									"data": {
+										"tag": "p",
+										"class": "text-rte-lg font-regular"
+									}
+								},
+								{
+									"label": "Bold",
+									"data": {
+										"tag": "p",
+										"class": "text-rte-lg font-bold"
+									}
+								}
+							]
+						},
+						{
+							"label": "M - 20",
+							"items": [
+								{
+									"label": "Light",
+									"data": {
+										"tag": "p",
+										"class": "text-rte-md font-light"
+									}
+								},
+								{
+									"label": "Normal",
+									"data": {
+										"tag": "p",
+										"class": "text-rte-md font-regular"
+									}
+								},
+								{
+									"label": "Bold",
+									"data": {
+										"tag": "p",
+										"class": "text-rte-md font-bold"
+									}
+								}
+							]
+						},
+						{
+							"label": "S - 16",
+							"items": [
+								{
+									"label": "Light",
 									"data": {
 										"tag": "p",
 										"class": "text-rte-sm font-light"
-								  }
+									}
 								},
 								{
-								  "label": "Normal",
-								  "data": {
+									"label": "Normal",
+									"data": {
 										"tag": "p",
 										"class": "text-rte-sm font-regular"
-								  }
+									}
 								},
 								{
-								  "label": "Bold",
+									"label": "Bold",
 									"data": {
 										"tag": "p",
 										"class": "text-rte-sm font-bold"
-								  }
+									}
 								}
-						  ]
+							]
 						},
 						{
-						  "label": "XS - 14",
-						  "items": [
+							"label": "XS - 14",
+							"items": [
 								{
-								  "label": "Light",
-								  "data": {
+									"label": "Light",
+									"data": {
 										"tag": "p",
 										"class": "text-rte-xs font-light"
-								  }
+									}
 								},
 								{
-								  "label": "Normal",
-								  "data": {
+									"label": "Normal",
+									"data": {
 										"tag": "p",
 										"class": "text-rte-xs font-regular"
-								  }
+									}
 								},
 								{
-								  "label": "Bold",
-								  "data": {
+									"label": "Bold",
+									"data": {
 										"tag": "p",
 										"class": "text-rte-xs font-bold"
-								  }
+									}
 								}
-						  ]
+							]
 						}
-				  ]
+					]
 				},
 				{
-				  "label": "Bullets",
-				  "data": {
+					"label": "Images",
+					"items": [
+						{
+							"label": "Full width",
+							"data": {
+								"tag": "img",
+								"class": "rte-img"
+							}
+						}
+
+					]
+				},
+				{
+					"label": "Bullets",
+					"data": {
 						"tag": "ul",
 						"class": "rte-ul"
-				  }
+					}
 				}
-		  ]
+			]
 	  },
 	  {
 		  "type": "tiptapToolbarExtension",
