@@ -1,0 +1,15 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+
+@{
+	var rootContent = Umbraco.ContentAtRoot();
+	var siteSettings = rootContent.OfType<SiteSettings>().FirstOrDefault();
+
+	var credits = siteSettings?.CreditsName ?? "";
+}
+
+<div class="bg-dark">
+	<div class="max-w-7xl mx-auto px-4 flex items-center gap-1">
+		<p class="mt-4 mb-4  text-xs text-primary">© Onatrix. All Rights Reserved. Credits to</p>
+		<p class="text-xs text-secondary">@credits</p>
+	</div>
+</div>
