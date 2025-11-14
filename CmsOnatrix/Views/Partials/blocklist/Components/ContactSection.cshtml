@@ -1,0 +1,63 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockListItem>;
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    var content = (ContentModels.ContactSection)Model.Content;
+    var settings = Model.Settings as ContentModels.ContactSettings;
+    var rootContent = Umbraco.ContentAtRoot();
+    var siteSettings = rootContent.OfType<SiteSettings>().FirstOrDefault();
+
+    var contactAddress = siteSettings?.ContactAddress ?? "No address found";
+    var contactPhone = siteSettings?.ContactPhone ?? "No phone found";
+    var contactEmail = siteSettings?.ContactEmail ?? "No email found";
+
+    var sectionColor = settings?.ContactBackgroundColor?.Color ?? "#f7f7f7";
+}
+
+<section class="py-[8rem] pb-0" style="background:@sectionColor;">
+    <div class="container  mx-auto px-4 flex flex-row">
+		<div class="relative w-7/12 h-[600px]">
+            @if (content.BgImage2 != null)
+            {
+                <img src="@content.BgImage2.Url()"
+                     class="absolute bottom-0 left-40 h-[570px]" />
+            }
+
+            @if (content.BgImage1 != null)
+            {
+                <img src="@content.BgImage1.Url()"
+                     class="absolute bottom-0 left-40 h-[600px] object-cover z-10" />
+            }
+		</div>
+        <div class="w-4/12 pl-12 pt-30">
+            <h1 class="text-[2.5rem] text-primary font-bold leading-none mb-6">
+                @content.ContactTitle
+            </h1>
+            <div class="space-y-4 text-sm">
+                <div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-location-dot text-secondary text-[1rem]"></i>
+                        <p class="font-semibold  text-primary">Office location</p>
+                    </div>
+ 
+                    <p class="pl-5 text-primary">@contactAddress</p>
+                </div>
+                <div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-phone fa-flip-horizontal text-secondary text-[1rem]"></i>
+                        <p class="font-semibold text-primary">Phone number</p>
+                    </div>
+                    
+                    <p class="pl-5 text-primary italic">@contactPhone</p>
+                </div>
+                <div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-regular fa-envelope text-secondary text-[1rem]"></i>
+                        <p class="font-semibold text-primary">E-mail address</p>
+                    </div>
+                    
+                    <p class="pl-5 text-primary italic">@contactEmail</p>
+                </div>
+            </div>
+        </div>
+	</div>
+</section>
