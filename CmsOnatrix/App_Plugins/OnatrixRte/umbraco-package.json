@@ -294,12 +294,20 @@
 				  "appearance": { "Style": "background-color:#535656; color:#fff; padding:5px;" }
 				},
 				{
-				  "label": "Body-Light",
-				  "data": {
+					"label": "Body-Light",
+					"data": {
 						"tag": "span",
 						"class": "text-body-text-100"
-				  },
-				  "appearance": { "Style": "background-color:#999999; color:#fff; padding:5px;" }
+					},
+					"appearance": { "Style": "background-color:#999999; color:#fff; padding:5px;" }
+				},
+				{
+					"label": "Body-Neutral",
+					"data": {
+						"tag": "span",
+						"class": "text-neutral"
+					},
+					"appearance": { "Style": "background-color:#999999; color:#fff; padding:5px;" }
 				}
 		  ]
 	  }

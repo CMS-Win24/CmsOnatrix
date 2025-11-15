@@ -1,0 +1,32 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockListItem>;
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    var content = (ContentModels.SuccessStorySection)Model.Content;
+}
+
+<section class="py-[6rem] bg-primary pb-0 relative overflow-visible">
+    @if (content.SuccessStoryBackgroundImage1 != null)
+    {
+        <img src="@content.SuccessStoryBackgroundImage1.Url()"
+             class="absolute inset-x-0 top-25 mx-auto max-w-6xl w-full object-contain z-0" />
+    }
+
+    <div class="container mx-auto px-4 flex flex-col items-center">
+        <div class="max-w-6xl text-center relative z-20">
+            <p class="text-[0.875rem] font-bold text-secondary">@content.SuccessLabel</p>
+            <h2 class="text-[2.5rem] font-bold text-neutral">@content.SuccessTitle</h2>
+            <div class="mt-10 flex justify-center gap-35 text-center">
+                <div class="rte w-1/3">@Html.Raw(content.CustomersServed)</div>
+                <div class="rte w-1/3">@Html.Raw(content.ProjectsCompleted)</div>
+                <div class="rte w-1/3">@Html.Raw(content.BranchesEstablished)</div>
+            </div>
+        </div>
+        <div class="relative w-full mt-16 h-[450px] z-10">
+            @if (content.SuccessStoryBackgroundImage2 != null)
+            {
+                <img src="@content.SuccessStoryBackgroundImage2.Url()"
+                     class="absolute left-1/2 -translate-x-1/2 bottom-[-10rem] max-w-5xl w-full object-contain" />
+            }
+        </div>
+    </div>
+</section>
